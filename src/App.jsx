@@ -2,9 +2,11 @@ import { useState } from 'react'
 import DashboardLayout from './components/layout/DashboardLayout'
 import Overview from './pages/Overview'
 import SecurityPrevention from './pages/SecurityPrevention'
-import CircuitFaultPrevention from './pages/CircuitFaultPrevention'
+import FaultPrevention from './pages/FaultPrevention'
+import CircuitHealth from './pages/CircuitHealth'
 import LogsAudit from './pages/LogsAudit'
-import SystemRules from './pages/SystemRules'
+import Settings from './pages/Settings'
+import Analytics from './pages/Analytics'
 import './styles/global.css'
 
 function App() {
@@ -14,8 +16,11 @@ function App() {
         switch (currentPage) {
             case 'Overview': return <Overview />;
             case 'Security Prevention': return <SecurityPrevention />;
-            case 'Circuit Health': return <CircuitFaultPrevention />; // Reusing circuit page for now or separate based on exact req
-            case 'Fault Prevention': return <CircuitFaultPrevention />;
+            case 'Circuit Health': return <CircuitHealth />;
+            case 'Fault Prevention': return <FaultPrevention />;
+            case 'Analytics': return <Analytics />;
+            case 'Logs & Audit': return <LogsAudit />;
+            case 'Settings': return <Settings />;
             default: return <Overview />;
         }
     };

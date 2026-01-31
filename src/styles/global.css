@@ -34,3 +34,27 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-subtle);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--bg-dark);
+}

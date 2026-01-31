@@ -17,7 +17,6 @@ const Sidebar = ({ currentPage, onNavigate }) => {
     { label: 'Fault Prevention', icon: <Zap size={20} /> },
     { label: 'Analytics', icon: <BarChart3 size={20} /> },
     { label: 'Logs & Audit', icon: <FileText size={20} /> },
-    { label: 'System Rules', icon: <Sliders size={20} /> },
     { label: 'Settings', icon: <Settings size={20} /> },
   ];
 
@@ -47,7 +46,6 @@ const Sidebar = ({ currentPage, onNavigate }) => {
           <div className="status-indicator online"></div>
           <span>System Online</span>
         </div>
-        <small>v2.4.0 Enterprise</small>
       </div>
 
       <style>{`

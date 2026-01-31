@@ -1,8 +1,7 @@
-import { Zap, Activity, AlertTriangle, CheckCircle } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import StatusTable from '../components/common/StatusTable';
-import CircuitDiagram from '../components/visualizations/CircuitDiagram';
 
-const CircuitFaultPrevention = () => {
+const FaultPrevention = () => {
     const rules = [
         { id: 'R-VOLT-01', name: 'Over-Voltage Protection', threshold: '> 24.5V', status: 'ACTIVE', triggers: 12 },
         { id: 'R-CURR-03', name: 'Surge Current Cutoff', threshold: '> 5.0A', status: 'ACTIVE', triggers: 5 },
@@ -29,9 +28,9 @@ const CircuitFaultPrevention = () => {
     ];
 
     return (
-        <div className="circuit-page">
+        <div className="fault-page">
             <div className="page-header">
-                <h2 className="page-title">Circuit Fault Prevention</h2>
+                <h2 className="page-title">Fault Prevention Systems</h2>
                 <div className="protection-status-card">
                     <Zap size={20} className="status-icon" />
                     <span>Hardware Protection Layer: <strong className="safe">ENGAGED</strong></span>
@@ -69,12 +68,8 @@ const CircuitFaultPrevention = () => {
                 </div>
             </div>
 
-            <div className="circuit-viz-section" style={{ marginTop: 'var(--spacing-lg)' }}>
-                <CircuitDiagram />
-            </div>
-
             <style>{`
-                .circuit-page {
+                .fault-page {
                     display: flex;
                     flex-direction: column;
                     gap: var(--spacing-lg);
@@ -188,4 +183,4 @@ const CircuitFaultPrevention = () => {
     );
 };
 
-export default CircuitFaultPrevention;
+export default FaultPrevention;
