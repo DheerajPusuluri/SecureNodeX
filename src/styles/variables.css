@@ -1,0 +1,26 @@
+:root {
+  /* Core Colors */
+  --bg-dark: #050a0f;
+  --bg-panel: #0f171f;
+  --bg-card: #16202a;
+  
+  /* Status Colors */
+  --color-safe: #00ff9d;       /* Green */
+  --color-warning: #ffb800;    /* Amber */
+  --color-danger: #ff3333;     /* Red */
+  --color-text-main: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-highlight: rgba(0, 255, 157, 0.3);
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  
+  /* Typography */
+  --font-main: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
